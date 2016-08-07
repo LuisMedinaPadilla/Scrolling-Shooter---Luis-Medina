@@ -5,9 +5,25 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_isla_1</sprite>
+    <sprite>sprites\spr_isla_2</sprite>
+    <sprite>sprites\spr_isla_3</sprite>
+    <sprite>sprites\spr_ElAvioncito</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\back_Water</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_isla_1</object>
+    <object>objects\obj_isla_2</object>
+    <object>objects\obj_isla_3</object>
+    <object>objects\obj_ElAvioncito</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Nivel_1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
