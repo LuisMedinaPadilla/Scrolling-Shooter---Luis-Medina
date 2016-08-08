@@ -4,12 +4,21 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_explocion_enemigo</sound>
+    <sound>sound\snd_explocion_ElAvioncito</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_isla_1</sprite>
     <sprite>sprites\spr_isla_2</sprite>
     <sprite>sprites\spr_isla_3</sprite>
     <sprite>sprites\spr_ElAvioncito</sprite>
+    <sprite>sprites\spr_bala</sprite>
+    <sprite>sprites\spr_enemigo_1</sprite>
+    <sprite>sprites\spr_enemigo_2</sprite>
+    <sprite>sprites\spr_enemigo_3</sprite>
+    <sprite>sprites\spr_explocion_enemigo</sprite>
+    <sprite>sprites\spr_explocion_ElAvioncito</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_Water</background>
@@ -20,6 +29,10 @@
     <object>objects\obj_isla_2</object>
     <object>objects\obj_isla_3</object>
     <object>objects\obj_ElAvioncito</object>
+    <object>objects\obj_bala</object>
+    <object>objects\obj_enemigo_1</object>
+    <object>objects\obj_explocion_enemigo</object>
+    <object>objects\obj_explocion_ElAvioncito</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Nivel_1</room>
