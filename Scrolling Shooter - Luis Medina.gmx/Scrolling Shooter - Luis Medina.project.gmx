@@ -19,6 +19,8 @@
     <sprite>sprites\spr_enemigo_3</sprite>
     <sprite>sprites\spr_explocion_enemigo</sprite>
     <sprite>sprites\spr_explocion_ElAvioncito</sprite>
+    <sprite>sprites\spr_bottom</sprite>
+    <sprite>sprites\spr_life</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_Water</background>
@@ -33,6 +35,8 @@
     <object>objects\obj_enemigo_1</object>
     <object>objects\obj_explocion_enemigo</object>
     <object>objects\obj_explocion_ElAvioncito</object>
+    <object>objects\obj_controlador_enemigo</object>
+    <object>objects\obj_controlador_vida</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Nivel_1</room>
