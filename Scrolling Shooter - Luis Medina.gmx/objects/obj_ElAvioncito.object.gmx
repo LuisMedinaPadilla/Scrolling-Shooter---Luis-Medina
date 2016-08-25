@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>can_shoot = 1;
+vspeed = -2;
 </string>
           </argument>
         </arguments>
@@ -71,7 +72,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>left = keyboard_check(vk_left);
+            <string>///Movimineto del jugador
+left = keyboard_check(vk_left);
 right = keyboard_check(vk_right);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
@@ -93,6 +95,8 @@ if (up){
      y = y - 2;
      }
 }
+
+var bottomHeigth = sprite_get_height(spr_bottom)
 
 if (down){
      if( y &lt; (room_height - sprite_height/2)){

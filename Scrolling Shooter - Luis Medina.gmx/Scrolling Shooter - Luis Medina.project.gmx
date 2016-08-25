@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\snd_explocion_enemigo</sound>
     <sound>sound\snd_explocion_ElAvioncito</sound>
+    <sound>sound\snd_exploDamage</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_isla_1</sprite>
@@ -15,12 +16,15 @@
     <sprite>sprites\spr_ElAvioncito</sprite>
     <sprite>sprites\spr_bala</sprite>
     <sprite>sprites\spr_enemigo_1</sprite>
-    <sprite>sprites\spr_enemigo_2</sprite>
-    <sprite>sprites\spr_enemigo_3</sprite>
     <sprite>sprites\spr_explocion_enemigo</sprite>
     <sprite>sprites\spr_explocion_ElAvioncito</sprite>
     <sprite>sprites\spr_bottom</sprite>
     <sprite>sprites\spr_life</sprite>
+    <sprite>sprites\spr_enemigo_2</sprite>
+    <sprite>sprites\spr_enemigo_3</sprite>
+    <sprite>sprites\spr_enemigo_4</sprite>
+    <sprite>sprites\spr_enemyBullet_1</sprite>
+    <sprite>sprites\spr_enemyBullet_2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_Water</background>
@@ -33,13 +37,17 @@
     <object>objects\obj_ElAvioncito</object>
     <object>objects\obj_bala</object>
     <object>objects\obj_enemigo_1</object>
+    <object>objects\obj_enemigo_2</object>
+    <object>objects\obj_enemigo_3</object>
+    <object>objects\obj_enemigo_4</object>
     <object>objects\obj_explocion_enemigo</object>
     <object>objects\obj_explocion_ElAvioncito</object>
-    <object>objects\obj_controlador_enemigo</object>
     <object>objects\obj_controlador_vida</object>
+    <object>objects\obj_enemyBullet1</object>
+    <object>objects\obj_enemyBullet2</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Nivel_1</room>
+    <room>rooms\rm_main</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

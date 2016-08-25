@@ -8,29 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>vspeed = 4;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -48,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(y &gt; room_height + sprite_height/2){
-     x = random(room_width);
-     y = -sprite_height/2;
+            <string>if(y &gt; (view_yview[0] - sprite_height/2)){
+     vspeed = 2;
+}
+
+if (y &gt; (view_yview[0] + view_hview[0])){
+      instance_destroy()
 }
 </string>
           </argument>
@@ -79,10 +59,9 @@ with(other){ //Labala
      instance_destroy();
 }
 instance_create(x,y, obj_explocion_enemigo);
-x = random(room_width);
-y = -sprite_height/2;
-score = score + 5
-show_debug_message(score);
+instance_destroy()
+score = score + 5;
+show_debug_message(" Score: " + string(score));
 </string>
           </argument>
         </arguments>
@@ -105,11 +84,9 @@ show_debug_message(score);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(other){ //Other es ElAvioncito
-     instance_change(obj_explocion_ElAvioncito, false);
-}
-
-audio_play_sound(snd_explocion_ElAvioncito, 10, false);
+            <string>audio_play_sound(snd_explocion_ElAvioncito, 10, false);
+instance_create(x,y, obj_explocion_enemigo);
+health = -30;
 instance_destroy();
 </string>
           </argument>
